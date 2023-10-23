@@ -1,0 +1,1 @@
+from modules.frames.copy_widgets.get_dir_details import get_dir_details
