@@ -1,14 +1,14 @@
 from customtkinter import *
 from dataclasses import dataclass
 from modules.file_tools.DeleteFiles import DeleteFiles
-from modules.frames.copy_widgets.get_dir_details import get_dir_details
+from modules.frames.delete_widgets.get_dir_from_user import get_dir_from_user
 
 
 def delete_file_types_in_src():
     """
     Gets details from user dialog to bulk move files of a specified file type.
     """
-    dir_details = get_dir_details()
+    dir_details = get_dir_from_user()
     all_files_in_src = DeleteFiles(
         source_dir=dir_details["src_path"],
         file_type=dir_details["file_type"],

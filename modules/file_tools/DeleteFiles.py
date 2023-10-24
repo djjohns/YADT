@@ -39,8 +39,3 @@ class DeleteFiles:
         except Exception as e:
             print(f"Error purging from {self.source_dir} to {self.dest_dir}.")
             print(e)
-
-
-if __name__ == "__main__":
-    purge_files = PurgeFiles(source_dir="C:/dev/test/", file_type=".csv")
-    purge_files
