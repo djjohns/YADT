@@ -3,6 +3,9 @@ from modules.frames import CopyWidgets, MoveWidgets, DeleteWidgets
 
 app = CTk()
 app.geometry("900x600")
+app.grid_rowconfigure(0, weight=1)
+app.grid_columnconfigure(0, weight=1)
+app.title("Yet Another Dev Tools")
 
 set_appearance_mode("system")
 set_default_color_theme("dark-blue")
